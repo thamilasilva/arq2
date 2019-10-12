@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>App Moove</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="app/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/8a8dd954f7.js"></script>
+
+    <script type="text/javascript" src="app/js/Banco.js"></script>
+    <script type="text/javascript" src="app/js/CadastrarUsuario.js"></script>
+
+</head>
+
+<body>
+    <form action="cadastro.html" class="login-forms">       
+     <h1>Cadastre-se</h1>
+        <div class="txtb">
+            <input type="text" id="Nome" name="nome">
+            <span data-placeholder="nome"></span>
+
+        </div>
+
+        <div class="txtb">
+            <input type="text" id="Cpf" name="cpf">
+            <span data-placeholder="cpf"></span>
+
+        </div>
+
+        <div class="txtb">
+            <input type="text" id="Altura" name="number">
+            <span data-placeholder="altura"></span>
+
+        </div>
+
+        <div class="txtb">
+            <input type="password" id="Senha" name="psw">
+            <span data-placeholder="senha"></span>
+
+        </div>
+
+        <div class="txtb">
+            <input type="password" id="ConfirmaSenha" name="psw">
+            <span data-placeholder="confirmar senha"></span>
+
+        </div>
+
+        <input type="submit" class="logbtn" value="Cadastro" onclick="CadastrarUsuario()">
+
+        <div class="bottom-text">
+            Já possue Cadastro? <a href="login.html">Fazer Login</a>
+        </div>
+
+
+    </form>
+    
+     <script type="text/javascript">
+    $(".txtb input").on("focus", function(){
+        $(this).addClass("focus");
+    });
+
+    $(".txtb input").on("blur", function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+    });
+     
+     </script>
+
+
+</body>
+
+</html>
