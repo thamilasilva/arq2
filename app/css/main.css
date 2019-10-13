@@ -123,6 +123,9 @@ font-size: 30px;
   padding: 15px;
   margin-top: 50px;
 }
+.todo a{
+  margin-left: 10px;
+}
 
 ul.todo {
   width: 100%;

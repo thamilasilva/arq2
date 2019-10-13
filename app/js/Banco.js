@@ -24,7 +24,7 @@ class banco_Pets{
 	salvar_cadastro_usuario(cadastro){
 		this.database.push(cadastro);
 		localStorage.setItem(this.indentificacao_banco , JSON.stringify(this.database));
-		alert('Salvo com sucesso');
+		
 		
 	}
 }

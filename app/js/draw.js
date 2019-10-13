@@ -10,15 +10,33 @@ function draw(){
 		let  li = document.createElement('li');
 		let  div = document.createElement('div');
 		let  button1 = document.createElement('button');
-		let  button2 = document.createElement('button');      
+		let  button2 = document.createElement('button');
+		let a1 = document.createElement('a');  
+		let a2 = document.createElement('a');  
+		let a3 = document.createElement('a');  
+		let a4 = document.createElement('a');      
 
         
 		
 		var  imc02 = imc.peso/(imc.altura*imc.altura);
+		var resultado;
+
+		if (imc02 < 18.5) {
+			resultado= "Abaixo do peso";
+			} else if (imc02 >= 18.5 && imc02 < 25) {
+					resultado = "Seu peso está normal";
+			} else if (imc02 >= 25 && imc02 < 30) {
+					resultado = "Acima do peso";
+			} else if (imc02 >= 30 && imc02 < 35) {
+					resultado = "Obesidade";	
+			} else if (imc02 > 35) {
+					resultado = "Obesidade mórbida";
+			}
 	 
-		let imc_peso = document.createTextNode ('Peso:' +imc.peso);
-		let imc_altura = document.createTextNode('Altura:' + imc.altura);
-		let imc_imc = document.createTextNode('IMC:' + imc02);
+		let imc_peso = document.createTextNode ('Peso: ' +imc.peso);
+		let imc_altura = document.createTextNode('Altura: ' + imc.altura);
+		let imc_imc = document.createTextNode('  IMC:  ' + imc02);
+		let imc_resultado =  document.createTextNode('situação: ' +resultado);
 
            /*ADICIONANDO A IMAGEM */
 		
@@ -29,6 +47,9 @@ function draw(){
 		div.setAttribute('class', 'buttons');
 		button1.setAttribute('class', 'remove');
 		button2.setAttribute('class', 'complete');
+
+		button1.innerHTML = removeSVG;
+		button2.innerHTML = completeSVG;
 
 			  /* MOSTRANDO PARA O NAVEGADOR QUE OS ELEMENTOS IMG E A DIV PERTENCEM AO ARTICLE*/
 			  
@@ -43,9 +64,14 @@ function draw(){
 				
 		 /*ABRINDO OS ELEMENTOS A, H4 E P */
  
-		li.appendChild(imc_peso);
-		li.appendChild(imc_altura);
-		li.appendChild(imc_imc);
+		a1.appendChild(imc_peso);
+		li.appendChild(a1);
+		a2.appendChild(imc_altura);
+		li.appendChild(a2);
+		a3.appendChild(imc_imc);
+		li.appendChild(a3);
+		a4.appendChild(imc_resultado);
+		li.appendChild(a4);
 
 		 /*ADICIONANDO CLASSE MAIN AO ARTICLE */
 
