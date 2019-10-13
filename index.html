@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>moove</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="app/css/main.css">
+    <link rel="stylesheet" type="text/css" href="app/css/reset.css">
+    <script src="https://kit.fontawesome.com/8a8dd954f7.js"></script>
+    
+</head>
+<body  onload="draw()">
+    
+    <header>
+         <a><img src="app/img/lgo MOOVE.png"/></a>
+    </header>
+
+    <div class="form">
+            <input type="text" placeholder="Entre com o peso.." id="Peso">
+                    <input type="text" placeholder="Entre com a altura.." id="Altura">
+                        <button id="add" onclick="Imc()">
+                            +
+                        </button>
+    </div>
+
+<div class="container">
+        <!-- Tarefas Não Completas -->
+        <ul class="todo" id="todo"></ul>
+
+        <!-- Tarefas Completas -->
+        <ul class="todo" id="completed"></ul>
+            </div>
+    
+
+
+    <!-- JavaScripts -->
+        <script src="app/js/main.js"></script>
+        <script src="app/js/Banco.js"></script>
+    
+
+        
+</body>
+</html>

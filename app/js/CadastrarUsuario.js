@@ -30,7 +30,7 @@ function CadastrarUsuario() {
 		else{
 			var cadastro = new Cadastro_Usuario(nome,cpf,altura,senha,ConfirmaSenha);
 		cadastros_login.salvar_cadastro_login(cadastro);
-        location.reload();
+		location.href = "login.html"
 		}
 		
        
@@ -64,10 +64,12 @@ function login(){
 			alert('Seja bem vindo: ' + cadastros_login.database[index].nome);
 			
 			
-			window.open('AdotePets.html');
+			window.open('index.html');
 			
 		}
 	}
 }
+
+
 
 

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.abertura{
+	align-items:center;
+	display:flex;
+	justify-content:center;
+	height:100vh;
+	background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+.abertura img{
+	max-width:40rem;
+}
+
+body{
+    min-height: 100vh;      
+background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+
+
+.login-form{
+    width: 360px;
+    
+    height: 580px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form h1{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+
+.login-forms{
+    width: 360px;
+    
+    height: 580px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-forms h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.txtb{
+    border-bottom: 2px solid #fff;
+    position: relative;
+    margin: 30px 0;    
+}
+.txtb input{
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #fff;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.txtb span::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+  background: #fff;
+    transition: .5s;
+}
+
+.focus + span::before{
+    top: -5px;
+}
+
+.focus + span::after{
+    width: 100%;
+}
+
+.logbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    color: #eb4d4b;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 20px;
+}
+.bottom-text{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.bottom-text a{
+    color: #fff;
+    
+}
+
+
+
+
