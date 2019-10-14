@@ -1,9 +1,8 @@
 //CADASTRO DA LAN HOUSE
 class Cadastro_Usuario{
-	constructor(nome,cpf,altura,senha,ConfirmaSenha){
+	constructor(nome,cpf,senha,ConfirmaSenha){
         this.nome = nome;
 		this.cpf = cpf;
-		this.altura = altura;
 		this.senha = senha;
 		this.ConfirmaSenha = ConfirmaSenha;
 	}
@@ -12,12 +11,11 @@ class Cadastro_Usuario{
 function CadastrarUsuario() {
 	
 	var nome = document.getElementById('Nome').value;
-	var altura = document.getElementById('Altura').value;
 	var senha = document.getElementById('Senha').value;
     var cpf = document.getElementById('Cpf').value;
     var ConfirmaSenha = document.getElementById('ConfirmaSenha').value;
 
-	if (nome == '' || altura == '' || senha == '' || cpf == '' || ConfirmaSenha == '') {
+	if (nome == '' || senha == '' || cpf == '' || ConfirmaSenha == '') {
 		alert('Campos vazios !!! preencha');
 
 	}
@@ -28,9 +26,8 @@ function CadastrarUsuario() {
 			alert('Senhas não Coincidem!')
 		}
 		else{
-			var cadastro = new Cadastro_Usuario(nome,cpf,altura,senha,ConfirmaSenha);
+			var cadastro = new Cadastro_Usuario(nome,cpf,senha,ConfirmaSenha);
 		cadastros_login.salvar_cadastro_login(cadastro);
-		location.href = "login.html"
 		}
 		
        

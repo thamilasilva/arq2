@@ -36,7 +36,7 @@ function draw(){
 		let imc_peso = document.createTextNode ('Peso: ' +imc.peso);
 		let imc_altura = document.createTextNode('Altura: ' + imc.altura);
 		let imc_imc = document.createTextNode('  IMC:  ' + imc02);
-		let imc_resultado =  document.createTextNode('situação: ' +resultado);
+		let imc_resultado =  document.createTextNode('Situação: ' +resultado);
 
            /*ADICIONANDO A IMAGEM */
 		

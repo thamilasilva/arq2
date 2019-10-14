@@ -7,8 +7,8 @@ class banco_Usuario{
 	salvar_cadastro_login(cadastro){
 		this.database.push(cadastro);
 		localStorage.setItem(this.indentificacao_banco , JSON.stringify(this.database));
-		alert('Salvo com sucesso');
-		location.href = "login.html"
+		alert('Cadastrada(o) com sucesso!');
+		
 		
 	}
 }
